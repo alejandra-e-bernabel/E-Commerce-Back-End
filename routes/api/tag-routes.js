@@ -37,7 +37,7 @@ router.post('/', (req, res) => {
   // create a new tag
   try {
     const tagData = Tag.create({
-      tag_name: req.body.category_name
+      tag_name: req.body.tag_name
     })
 
     res.json(tagData);
