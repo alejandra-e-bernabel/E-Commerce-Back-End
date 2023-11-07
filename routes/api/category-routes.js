@@ -56,8 +56,8 @@ router.put('/:id', (req, res) => {
             }
         }
     )
-    .then((updatedbook)=> {
-        res.json(updatedbook);
+    .then((updatedCategory)=> {
+        res.json(updatedCategory);
     })
     .catch((err)=> {
         res.status(500).json(err)
